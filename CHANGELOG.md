@@ -2,6 +2,10 @@
 
 ## [Unreleased]
 
+### Changed
+
+- Kidney: Auto check all repos
+
 ### Fixed
 
 - Prevent CideProject logging URLs on init

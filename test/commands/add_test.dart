@@ -8,7 +8,6 @@ import 'dart:io';
 
 import 'package:args/command_runner.dart';
 import 'package:gg_changelog/gg_changelog.dart';
-import 'package:gg_changelog/src/commands/release.dart';
 import 'package:pub_semver/pub_semver.dart';
 import 'package:test/test.dart';
 

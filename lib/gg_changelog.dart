@@ -11,5 +11,6 @@ export 'src/commands/add.dart';
 export 'src/commands/github_diff_template.dart';
 export 'src/commands/github_tag_template.dart';
 export 'src/commands/has_right_format.dart';
+export 'src/commands/release.dart';
 export 'src/tools/repo_url.dart';
 export 'src/tools/cider.dart';

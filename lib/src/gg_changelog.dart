@@ -6,7 +6,6 @@
 
 import 'package:args/command_runner.dart';
 import 'package:gg_changelog/gg_changelog.dart';
-import 'package:gg_changelog/src/commands/release.dart';
 import 'package:gg_log/gg_log.dart';
 
 /// The command line interface for GgChangelog

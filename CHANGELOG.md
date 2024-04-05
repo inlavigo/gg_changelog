@@ -5,6 +5,7 @@
 ### Fixed
 
 - Prevent CideProject logging URLs on init
+- Link in CHANGELOG.md was broken
 
 ## [1.0.4] - 2024-04-05
 
@@ -37,5 +38,5 @@
 - Initial version
 
 [Unreleased]: https://github.com/inlavigo/gg_changelog/compare/1.0.4...HEAD
-[1.0.4]: https://github.com/inlavigo/gg_changelog.git/compare/1.0.3...1.0.4
+[1.0.4]: https://github.com/inlavigo/gg_changelog/compare/1.0.3...1.0.4
 [1.0.3]: https://github.com/inlavigo/gg_changelog/compare/1.0.2...1.0.3

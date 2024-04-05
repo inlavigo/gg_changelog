@@ -7,7 +7,6 @@
 import 'dart:convert';
 import 'dart:io';
 
-import 'package:gg_console_colors/gg_console_colors.dart';
 import 'package:gg_capture_print/gg_capture_print.dart';
 import 'package:test/test.dart';
 
@@ -21,22 +20,13 @@ void main() {
       // Execute bin/gg_changelog.dart and check if it prints help
       final result = await Process.run(
         './bin/gg_changelog.dart',
-        ['my-command'],
+        ['--help'],
         stdoutEncoding: utf8,
         stderrEncoding: utf8,
       );
 
-      final expectedMessages = [
-        'Invalid argument(s): Option',
-        red('input'),
-        'is mandatory.',
-      ];
-
       final stdout = result.stdout as String;
-
-      for (final msg in expectedMessages) {
-        expect(stdout, contains(msg));
-      }
+      expect(stdout, contains('has-right-format'));
     });
   });
 
@@ -46,13 +36,12 @@ void main() {
       test('should print "value"', () async {
         // Execute bin/gg_changelog.dart and check if it prints "value"
         final messages = <String>[];
-        await run(args: ['my-command', '--input', '5'], ggLog: messages.add);
+        await capturePrint(
+          ggLog: messages.add,
+          code: () => run(args: ['--help'], ggLog: messages.add),
+        );
 
-        final expectedMessages = ['Running my-command with param 5'];
-
-        for (final msg in expectedMessages) {
-          expect(hasLog(messages, msg), isTrue);
-        }
+        expect(messages[0], contains('has-right-format'));
       });
     });
   });

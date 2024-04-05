@@ -1,5 +1,4 @@
 # Changelog
-
-## [Unreleased]
-
-- Initial version.
+## 1.0.0 - 2024-04-05
+### Added
+- Initial version

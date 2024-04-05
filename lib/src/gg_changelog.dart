@@ -5,14 +5,19 @@
 // found in the LICENSE file in the root of this package.
 
 import 'package:args/command_runner.dart';
-import './commands/my_command.dart';
+import 'package:gg_changelog/gg_changelog.dart';
+import 'package:gg_changelog/src/commands/release.dart';
 import 'package:gg_log/gg_log.dart';
 
 /// The command line interface for GgChangelog
 class GgChangelog extends Command<dynamic> {
   /// Constructor
   GgChangelog({required this.ggLog}) {
-    addSubcommand(MyCommand(ggLog: ggLog));
+    addSubcommand(Add(ggLog: ggLog));
+    addSubcommand(GithubDiffTemplate(ggLog: ggLog));
+    addSubcommand(GithubTagTemplate(ggLog: ggLog));
+    addSubcommand(HasRightFormat(ggLog: ggLog));
+    addSubcommand(Release(ggLog: ggLog));
   }
 
   /// The log function
@@ -20,7 +25,8 @@ class GgChangelog extends Command<dynamic> {
 
   // ...........................................................................
   @override
-  final name = 'ggChangelog';
+  final name = 'changelog';
   @override
-  final description = 'Add your description here.';
+  final description = 'various tools to manipulate dart CHANGELOG.md files. '
+      'Based on cider package.';
 }

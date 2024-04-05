@@ -14,3 +14,4 @@ export 'src/commands/has_right_format.dart';
 export 'src/commands/release.dart';
 export 'src/tools/repo_url.dart';
 export 'src/tools/cider.dart';
+export 'src/tools/pretty_cider_change_log.dart';

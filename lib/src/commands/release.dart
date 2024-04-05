@@ -55,6 +55,9 @@ class Release extends DirCommand<void> {
     // Use cider to write into CHANGELOG.md
     final cider = await _ciderProject.get(directory: directory, ggLog: ggLog);
     await cider.release(releaseDate ?? DateTime.now(), version: releaseVersion);
+
+    // Pretty print the changelog
+    await prettyPrintChangelogInDirectory(directory);
   }
 
   // ######################

@@ -8,7 +8,6 @@ import 'dart:io';
 
 import 'package:gg_args/gg_args.dart';
 import 'package:gg_changelog/gg_changelog.dart';
-import 'package:gg_changelog/src/tools/cider.dart';
 import 'package:gg_console_colors/gg_console_colors.dart';
 import 'package:gg_log/gg_log.dart';
 import 'package:mocktail/mocktail.dart';
@@ -86,6 +85,9 @@ class Add extends DirCommand<dynamic> {
 
     final cider = await _ciderProject.get(directory: directory, ggLog: ggLog);
     await cider.addUnreleased(logType.name, message);
+
+    // Pretty print the changelog
+    await prettyPrintChangelogInDirectory(directory);
 
     return true;
   }

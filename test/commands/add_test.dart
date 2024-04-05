@@ -20,6 +20,9 @@ void main() {
   late Add add;
   late CommandRunner<dynamic> runner;
 
+  const expectedContent =
+      '# Changelog\n\n## Unreleased\n\n### Added\n\n- Message 1\n';
+
   setUp(() async {
     messages.clear();
     d = await Directory.systemTemp.createTemp();
@@ -45,15 +48,12 @@ void main() {
           await runner.run([
             'add',
             '--message',
-            'Message 2',
+            'Message 1',
             '--log-type',
-            'fixed',
+            'added',
             '-i',
             d.path,
           ]);
-
-          const expectedContent =
-              '# Changelog\n## Unreleased\n### Fixed\n- Message 2\n';
 
           final content0 = await changelogContent();
           expect(content0, expectedContent);
@@ -76,9 +76,6 @@ void main() {
 
                 // Check result
                 expect(result0, true);
-
-                const expectedContent =
-                    '# Changelog\n## Unreleased\n### Added\n- Message 1\n';
 
                 final content0 = await changelogContent();
                 expect(content0, expectedContent);
@@ -145,9 +142,6 @@ void main() {
 
               // Check result
               expect(result0, true);
-
-              const expectedContent =
-                  '# Changelog\n## Unreleased\n### Added\n- Message 1\n';
 
               final content0 = await changelogContent();
               expect(content0, expectedContent);

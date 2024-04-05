@@ -1,5 +1,7 @@
 # Changelog
-## 1.0.3
+## [Unreleased]
+### Added
+- Pretty print changelog
 
 ## 1.0.2 - 2024-04-05
 ### Added
@@ -12,3 +14,5 @@
 ## 1.0.0 - 2024-04-05
 ### Added
 - Initial version
+
+[Unreleased]: https://github.com/inlavigo/gg_changelog.git/compare/1.0.2...HEAD

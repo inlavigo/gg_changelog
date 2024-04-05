@@ -34,12 +34,12 @@ class CiderProject {
   }) async {
     final diffTemplate = await _githubDiffTemplate.exec(
       directory: directory,
-      ggLog: ggLog,
+      ggLog: (_) {}, // coverage:ignore-line
     );
 
     final tagTemplate = await _githubTagTemplate.exec(
       directory: directory,
-      ggLog: ggLog,
+      ggLog: (_) {}, // coverage:ignore-line
     );
 
     final result = Project(

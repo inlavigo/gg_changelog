@@ -36,7 +36,7 @@ void main() {
         final result = await githubTagTemplate.exec(directory: d, ggLog: ggLog);
 
         // Check result
-        expect(result, 'https://github.com/inlavigo/gg_changelog.git/tag/%tag');
+        expect(result, 'https://github.com/inlavigo/gg_changelog/tag/%tag');
       });
     });
   });

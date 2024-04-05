@@ -39,7 +39,7 @@ void main() {
         // Check result
         expect(
           result,
-          'https://github.com/inlavigo/gg_changelog.git/compare/%from%...%to%',
+          'https://github.com/inlavigo/gg_changelog/compare/%from%...%to%',
         );
       });
     });

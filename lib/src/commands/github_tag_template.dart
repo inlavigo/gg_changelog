@@ -33,7 +33,8 @@ class GithubTagTemplate extends DirCommand<dynamic> {
     // Does the directory exist?
     await check(directory: directory);
     final repoUrl = await _repoUrl.get(directory: directory);
-    final result = '$repoUrl/tag/%tag';
+    final repoUrlWithoutGit = repoUrl.replaceAll(RegExp(r'\.git$'), '');
+    final result = '$repoUrlWithoutGit/tag/%tag';
     ggLog?.call(result);
 
     return result;

@@ -43,7 +43,9 @@ class GithubDiffTemplate extends DirCommand<dynamic> {
     required Directory directory,
   }) async {
     final repoUrl = await _repoUrl.get(directory: directory);
-    return '$repoUrl/compare/%from%...%to%';
+    final repoUrlWithoutGit = repoUrl.replaceAll(RegExp(r'\.git$'), '');
+
+    return '$repoUrlWithoutGit/compare/%from%...%to%';
   }
 
   // ######################

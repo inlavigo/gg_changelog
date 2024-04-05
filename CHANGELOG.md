@@ -1,4 +1,6 @@
 # Changelog
+## 1.0.2
+
 ## 1.0.1 - 2024-04-05
 ### Added
 - Add Release to public API

@@ -11,6 +11,7 @@ import 'package:gg_changelog/gg_changelog.dart';
 import 'package:gg_changelog/src/tools/cider.dart';
 import 'package:gg_console_colors/gg_console_colors.dart';
 import 'package:gg_log/gg_log.dart';
+import 'package:mocktail/mocktail.dart';
 
 // #############################################################################
 
@@ -160,3 +161,7 @@ class Add extends DirCommand<dynamic> {
     return false;
   }
 }
+
+// .............................................................................
+/// Mock for [Add]
+class MockAdd extends Mock implements Add {}

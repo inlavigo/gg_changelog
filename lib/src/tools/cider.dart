@@ -12,6 +12,7 @@ import 'package:gg_log/gg_log.dart';
 
 // ignore: implementation_imports
 import 'package:cider/src/cli/config.dart';
+import 'package:mocktail/mocktail.dart';
 
 /// Creates a cider project
 class CiderProject {
@@ -56,3 +57,6 @@ class CiderProject {
   final GithubDiffTemplate _githubDiffTemplate;
   final GithubTagTemplate _githubTagTemplate;
 }
+
+/// Mock for [CiderProject]
+class MockCiderProject extends Mock implements CiderProject {}

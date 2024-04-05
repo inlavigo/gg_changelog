@@ -10,6 +10,7 @@ import 'package:gg_args/gg_args.dart';
 import 'package:gg_changelog/src/tools/repo_url.dart';
 
 import 'package:gg_log/gg_log.dart';
+import 'package:mocktail/mocktail.dart';
 
 // #############################################################################
 /// An example command
@@ -51,3 +52,6 @@ class GithubDiffTemplate extends DirCommand<dynamic> {
 
   final RepoUrl _repoUrl;
 }
+
+/// Mock for [GitHubDiffTemplate]
+class MockGitHubDiffTemplate extends Mock implements GithubDiffTemplate {}

@@ -11,6 +11,7 @@ import 'package:gg_changelog/gg_changelog.dart';
 import 'package:gg_console_colors/gg_console_colors.dart';
 import 'package:gg_log/gg_log.dart';
 import 'package:gg_status_printer/gg_status_printer.dart';
+import 'package:mocktail/mocktail.dart';
 
 /// Checks if the change log has the right format.
 class HasRightFormat extends DirCommand<dynamic> {
@@ -85,3 +86,7 @@ class HasRightFormat extends DirCommand<dynamic> {
     );
   }
 }
+
+// .............................................................................
+/// Mock for [HasRightFormat]
+class MockHasRightFormat extends Mock implements HasRightFormat {}

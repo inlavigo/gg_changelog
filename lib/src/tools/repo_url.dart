@@ -6,6 +6,8 @@
 
 import 'dart:io';
 
+import 'package:mocktail/mocktail.dart';
+
 /// Returns the repository URL from the pubspec.yaml file
 class RepoUrl {
   /// Constructor
@@ -23,3 +25,6 @@ class RepoUrl {
     return repositoryUrl;
   }
 }
+
+/// Mock for [RepoUrl]
+class MockRepoUrl extends Mock implements RepoUrl {}

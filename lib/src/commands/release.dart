@@ -9,6 +9,7 @@ import 'dart:io';
 import 'package:gg_args/gg_args.dart';
 import 'package:gg_changelog/gg_changelog.dart';
 import 'package:gg_log/gg_log.dart';
+import 'package:mocktail/mocktail.dart';
 import 'package:pub_semver/pub_semver.dart';
 
 /// An example command
@@ -79,3 +80,6 @@ class Release extends DirCommand<void> {
     );
   }
 }
+
+/// Mock for [Release]
+class MockRelease extends Mock implements Release {}

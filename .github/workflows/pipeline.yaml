@@ -67,6 +67,9 @@ jobs:
             dart pub get
           fi
 
+      - name: Activate gg
+        run: dart pub global activate gg
+
       - name: Make Script Executable
         run: chmod +x ./check
 

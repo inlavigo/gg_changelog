@@ -2,6 +2,10 @@
 
 ## [1.0.5] - 2024-04-09
 
+### Added
+
+- Preapre publish
+
 ### Changed
 
 - Kidney: Auto check all repos

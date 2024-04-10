@@ -156,7 +156,7 @@ class Add extends DirCommand<dynamic> {
       return false;
     }
 
-    if (parts.length > indexOfUnreleased) {
+    if (parts.length > indexOfUnreleased + 1) {
       return parts[indexOfUnreleased + 1].contains(message);
     }
 

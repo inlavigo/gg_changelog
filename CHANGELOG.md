@@ -1,10 +1,14 @@
 # Changelog
 
+## 1.0.8 - 2024-04-11
+
+- Updated latest dependencies
+
 ## [1.0.7] - 2024-04-10
 
 ### Fixed
 
-- error happening with CHANGELOG.md created by gg\_create\_package
+- error happening with CHANGELOG.md created by gg_create_package
 
 ## [1.0.6] - 2024-04-10
 

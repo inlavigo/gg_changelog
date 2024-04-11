@@ -14,7 +14,7 @@ import 'package:gg_status_printer/gg_status_printer.dart';
 import 'package:mocktail/mocktail.dart';
 
 /// Checks if the change log has the right format.
-class HasRightFormat extends DirCommand<dynamic> {
+class HasRightFormat extends DirCommand<bool> {
   /// Constructor
   HasRightFormat({
     required super.ggLog,
@@ -28,7 +28,7 @@ class HasRightFormat extends DirCommand<dynamic> {
   // ...........................................................................
   /// Throws if the existing change log has not the right format
   @override
-  Future<void> exec({
+  Future<bool> exec({
     required Directory directory,
     required GgLog ggLog,
   }) async {
@@ -52,10 +52,13 @@ class HasRightFormat extends DirCommand<dynamic> {
     if (!result) {
       throw Exception(darkGray(errors.join('\n')));
     }
+
+    return result;
   }
 
   // ...........................................................................
   /// Returns true if CHANGELOG.md has the right format
+  @override
   Future<bool> get({
     required Directory directory,
     required GgLog ggLog,

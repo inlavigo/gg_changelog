@@ -10,7 +10,6 @@ import 'package:gg_args/gg_args.dart';
 import 'package:gg_changelog/gg_changelog.dart';
 import 'package:gg_console_colors/gg_console_colors.dart';
 import 'package:gg_log/gg_log.dart';
-import 'package:mocktail/mocktail.dart';
 
 // #############################################################################
 
@@ -39,7 +38,7 @@ final _logTypes = LogType.values.map((e) => e.name);
 
 // #############################################################################
 /// An example command
-class Add extends DirCommand<dynamic> {
+class Add extends DirCommand<bool> {
   /// Constructor
   Add({
     required super.ggLog,
@@ -166,4 +165,4 @@ class Add extends DirCommand<dynamic> {
 
 // .............................................................................
 /// Mock for [Add]
-class MockAdd extends Mock implements Add {}
+class MockAdd extends MockDirCommand<bool> implements Add {}

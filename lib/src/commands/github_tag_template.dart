@@ -10,11 +10,10 @@ import 'package:gg_args/gg_args.dart';
 import 'package:gg_changelog/src/tools/repo_url.dart';
 
 import 'package:gg_log/gg_log.dart';
-import 'package:mocktail/mocktail.dart';
 
 // #############################################################################
 /// An example command
-class GithubTagTemplate extends DirCommand<dynamic> {
+class GithubTagTemplate extends DirCommand<String> {
   /// Constructor
   GithubTagTemplate({
     required super.ggLog,
@@ -48,4 +47,5 @@ class GithubTagTemplate extends DirCommand<dynamic> {
 }
 
 /// Mock for [GitHubTagTemplate]
-class MockGitHubTagTemplate extends Mock implements GithubTagTemplate {}
+class MockGitHubTagTemplate extends MockDirCommand<String>
+    implements GithubTagTemplate {}

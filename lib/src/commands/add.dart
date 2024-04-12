@@ -57,6 +57,22 @@ class Add extends DirCommand<bool> {
     required GgLog ggLog,
     String? message,
     LogType? logType,
+  }) =>
+      get(
+        directory: directory,
+        ggLog: ggLog,
+        message: message,
+        logType: logType,
+      );
+
+  // ...........................................................................
+  /// Returns true if a message was added to the change log.
+  @override
+  Future<bool> get({
+    required Directory directory,
+    required GgLog ggLog,
+    String? message,
+    LogType? logType,
   }) async {
     // Does the directory exist?
     await check(directory: directory);

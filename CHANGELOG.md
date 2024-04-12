@@ -1,5 +1,15 @@
 # Changelog
 
+## [Unreleased]
+
+### 1.0.9 - 2024-04-11
+
+- Upgrade to latest dependencies
+
+### Removed
+
+- dependency to gg\_install\_gg, remove ./check script
+
 ## 1.0.8 - 2024-04-11
 
 - Updated latest dependencies
@@ -8,7 +18,7 @@
 
 ### Fixed
 
-- error happening with CHANGELOG.md created by gg_create_package
+- error happening with CHANGELOG.md created by gg\_create\_package
 
 ## [1.0.6] - 2024-04-10
 
@@ -63,6 +73,7 @@
 
 - Initial version
 
+[Unreleased]: https://github.com/inlavigo/gg_changelog/compare/1.0.8...HEAD
 [1.0.7]: https://github.com/inlavigo/gg_changelog/compare/1.0.6...1.0.7
 [1.0.6]: https://github.com/inlavigo/gg_changelog/compare/1.0.5...1.0.6
 [1.0.5]: https://github.com/inlavigo/gg_changelog/compare/1.0.4...1.0.5

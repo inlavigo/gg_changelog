@@ -25,7 +25,7 @@ class GithubTagTemplate extends DirCommand<String> {
 
   // ...........................................................................
   @override
-  Future<String> exec({
+  Future<String> get({
     required Directory directory,
     GgLog? ggLog,
   }) async {

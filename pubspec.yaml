@@ -9,7 +9,7 @@ environment:
 dependencies:
   args: ^2.4.2
   cider: ^0.2.7
-  gg_args: ^1.1.10
+  gg_args: ^2.0.1
   gg_console_colors: ^2.1.0
   gg_log: ^1.0.1
   gg_process: ^1.1.2
@@ -20,7 +20,6 @@ dependencies:
 
 dev_dependencies:
   gg_capture_print: ^1.0.4
-  gg_install_gg: ^1.0.2
   lints: ^3.0.0
   pana: ^0.22.2
   test: ^1.24.0

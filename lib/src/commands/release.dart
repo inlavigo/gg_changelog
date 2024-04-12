@@ -31,6 +31,22 @@ class Release extends DirCommand<void> {
     required GgLog ggLog,
     Version? releaseVersion,
     DateTime? releaseDate,
+  }) =>
+      get(
+        directory: directory,
+        ggLog: ggLog,
+        releaseVersion: releaseVersion,
+        releaseDate: releaseDate,
+      );
+
+  // ...........................................................................
+  /// Returns true if a message was added to the change log.
+  @override
+  Future<void> get({
+    required Directory directory,
+    required GgLog ggLog,
+    Version? releaseVersion,
+    DateTime? releaseDate,
   }) async {
     // Does the directory exist?
     await check(directory: directory);

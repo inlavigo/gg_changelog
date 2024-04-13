@@ -9,6 +9,7 @@
 ### Removed
 
 - dependency to gg\_install\_gg, remove ./check script
+- dependency pana
 
 ## 1.0.8 - 2024-04-11
 

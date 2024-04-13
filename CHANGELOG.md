@@ -1,10 +1,14 @@
 # Changelog
 
-## [Unreleased]
+## [1.0.10] - 2024-04-13
 
 ### 1.0.9 - 2024-04-11
 
 - Upgrade to latest dependencies
+
+### Changed
+
+- Adjusted version
 
 ### Removed
 
@@ -74,7 +78,7 @@
 
 - Initial version
 
-[Unreleased]: https://github.com/inlavigo/gg_changelog/compare/1.0.8...HEAD
+[1.0.10]: https://github.com/inlavigo/gg_changelog/compare/1.0.8...1.0.10
 [1.0.7]: https://github.com/inlavigo/gg_changelog/compare/1.0.6...1.0.7
 [1.0.6]: https://github.com/inlavigo/gg_changelog/compare/1.0.5...1.0.6
 [1.0.5]: https://github.com/inlavigo/gg_changelog/compare/1.0.4...1.0.5

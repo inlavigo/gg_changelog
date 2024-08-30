@@ -1,6 +1,6 @@
 # Changelog
 
-## [Unreleased]
+## [1.0.11] - 2024-08-30
 
 ### Changed
 
@@ -84,7 +84,7 @@
 
 - Initial version
 
-[Unreleased]: https://github.com/inlavigo/gg_changelog/compare/1.0.10...HEAD
+[1.0.11]: https://github.com/inlavigo/gg_changelog/compare/1.0.10...1.0.11
 [1.0.10]: https://github.com/inlavigo/gg_changelog/compare/1.0.8...1.0.10
 [1.0.7]: https://github.com/inlavigo/gg_changelog/compare/1.0.6...1.0.7
 [1.0.6]: https://github.com/inlavigo/gg_changelog/compare/1.0.5...1.0.6

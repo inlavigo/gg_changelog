@@ -1,5 +1,11 @@
 # Changelog
 
+## [Unreleased]
+
+### Changed
+
+- Run unit tests on MacOS
+
 ## [1.0.10] - 2024-04-13
 
 ### 1.0.9 - 2024-04-11
@@ -78,6 +84,7 @@
 
 - Initial version
 
+[Unreleased]: https://github.com/inlavigo/gg_changelog/compare/1.0.10...HEAD
 [1.0.10]: https://github.com/inlavigo/gg_changelog/compare/1.0.8...1.0.10
 [1.0.7]: https://github.com/inlavigo/gg_changelog/compare/1.0.6...1.0.7
 [1.0.6]: https://github.com/inlavigo/gg_changelog/compare/1.0.5...1.0.6

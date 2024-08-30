@@ -19,8 +19,8 @@ void main() {
     test('should be executable', () async {
       // Execute bin/gg_changelog.dart and check if it prints help
       final result = await Process.run(
-        './bin/gg_changelog.dart',
-        ['--help'],
+        'dart',
+        ['./bin/gg_changelog.dart', '--help'],
         stdoutEncoding: utf8,
         stderrEncoding: utf8,
       );
